@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b414ac3-87e5-4507-bf67-2970d6396dbc" name="Changes" comment="">
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/workspace.xml" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/api.ts" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/api.ts" afterDir="false" />
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/index.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/index.tsx" afterDir="false" />
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useLibrus.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useLibrus.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="8b414ac3-87e5-4507-bf67-2970d6396dbc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,25 +67,29 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+  <component name="RunManager" selected="npm.android">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
-    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+    <configuration name="android" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start" />
+        <script value="android" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application" />
+      <item itemvalue="npm.android" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
       </set>
     </attachedChunks>
   </component>
@@ -104,6 +103,7 @@
       <workItem from="1746449932699" duration="4539000" />
       <workItem from="1746528670568" duration="15210000" />
       <workItem from="1746608964375" duration="2788000" />
+      <workItem from="1746715577975" duration="783000" />
     </task>
     <servers />
   </component>
