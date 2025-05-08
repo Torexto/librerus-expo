@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b414ac3-87e5-4507-bf67-2970d6396dbc" name="Changes" comment="">
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/_layout.tsx" afterDir="false" />
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/explore.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/workspace.xml" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/api.ts" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/api.ts" afterDir="false" />
       <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/index.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/index.tsx" afterDir="false" />
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/_layout.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/_layout.tsx" afterDir="false" />
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/package-lock.json" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/package-lock.json" afterDir="false" />
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/package.json" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/package.json" afterDir="false" />
-      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/scripts/reset-project.js" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useLibrus.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useLibrus.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="/run/media/torexto/DATA_SSD/WebstormProjects/librerus" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Torexto&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Torexto/librerus-expo.git&quot;,
+    &quot;accountId&quot;: &quot;4c1ff1a1-8439-462a-83b5-256f1aa6f2fb&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -36,24 +45,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/disks/DATA_SSD/WebstormProjects/librerus/app/(tabs)",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
-    "ts.external.directory.path": "/disks/DATA_SSD/WebstormProjects/librerus/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/disks/DATA_SSD/WebstormProjects/librerus/app/(tabs)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.TypeScript&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/disks/DATA_SSD/WebstormProjects/librerus/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/(tabs)" />
@@ -93,7 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1746449930833</updated>
       <workItem from="1746449932699" duration="4539000" />
-      <workItem from="1746528670568" duration="14802000" />
+      <workItem from="1746528670568" duration="15210000" />
+      <workItem from="1746608964375" duration="2788000" />
     </task>
     <servers />
   </component>

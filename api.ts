@@ -174,6 +174,7 @@ class LibrusApi {
       .catch(e => {
         if (e instanceof AxiosError)
           throw new Error(`Failed to get subject info: ${e?.response?.data}`);
+        return null;
       });
   }
 }

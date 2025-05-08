@@ -2,17 +2,10 @@ import {createContext, ReactNode, useContext, useState} from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import LibrusApi, {Grade, GradeComment, Subject, withCredentials} from "@/api";
 
-export type GradeWithComment = {
-  grade: Grade,
-  comment: GradeComment | null
-}
+export type Subjects = Record<string, NewSubject>;
 
-export type SubjectWithGrades = {
-  grades: GradeWithComment[];
-  subject: Subject;
-}
-
-export type Subjects = Record<string, SubjectWithGrades>;
+export type NewSubject = Subject & { grades: NewGrade[] };
+export type NewGrade = Grade & { Comment: GradeComment | null };
 
 export type LibrusData = {
   subjects: Subjects;
@@ -51,6 +44,7 @@ export const LibrusProvider = ({children}: { children: ReactNode }) => {
     api
       .getGrades()
       .then(async (grades) => {
+          // Group by subject
           const gradesGroup = grades.reduce((groups, grade) => {
             const subjectId = grade.Subject.Id;
             if (!groups[subjectId]) {
@@ -64,18 +58,18 @@ export const LibrusProvider = ({children}: { children: ReactNode }) => {
 
           const subjectsHandler = [];
 
+          // Get subject info
           for (const subjectId of Object.keys(gradesGroup)) {
-            const promise = api.getSubjectInfo(subjectId)
-              .then((subject) => {
-                  subjects[subjectId] = {
-                    grades: gradesGroup[parseInt(subjectId)].map(grade => {
-                      return {grade, comment: null}
-                    }),
-                    subject: subject!,
-                  };
+            const promise = api
+              .getSubjectInfo(subjectId)
+              .then((subjectInfo) => {
+                const grades = gradesGroup[parseInt(subjectId)];
+                subjects[subjectId] = {
+                  ...subjectInfo!,
+                  grades: grades.map(grade => ({...grade, Comment: null}))
                 }
-              )
-            ;
+              });
+
             subjectsHandler.push(promise);
           }
 
@@ -83,16 +77,29 @@ export const LibrusProvider = ({children}: { children: ReactNode }) => {
 
           const gradesHandler = [];
 
+          // Get grade comment
           for (const {grades} of Object.values(subjects)) {
-            for (const gradeWithComment of grades) {
-              const commentId = gradeWithComment.grade.Comments?.at(0)?.Id;
+            for (const grade of grades) {
+              const commentId = grade.Comments?.at(0)?.Id;
               if (!commentId) continue;
               const promise = api.getGradeComment(commentId).then(comment => {
-                gradeWithComment.comment = comment
+                grade.Comment = comment
               });
               gradesHandler.push(promise);
             }
           }
+
+          const groupedGrades = [];
+
+          // for (const {grades} of Object.values(subjects)) {
+          //   const subjectGroupedGrades = {}
+          //   for (const gradeWithComment of grades) {
+          //     const grade = {
+          //       ...gradeWithComment.grade,
+          //       Comment: gradeWithComment.comment
+          //     };
+          //   }
+          // }
 
           await Promise.all(gradesHandler);
 

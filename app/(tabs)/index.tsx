@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {ScrollView, Text, View} from "react-native";
-import {GradeWithComment, SubjectWithGrades, useLibrus} from "@/hooks/useLibrus";
+import {NewGrade, NewSubject, useLibrus} from "@/hooks/useLibrus";
+import {Grade} from "@/api";
 
 export default function HomeScreen() {
   const {data, refresh} = useLibrus();
@@ -14,29 +15,29 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={{flex: 1}}>
-      {Object.values(data?.subjects).map((subjectWithGrades) => (
-        <SubjectComponent key={subjectWithGrades.subject.Id} subjectWithGrades={subjectWithGrades}/>
+      {Object.values(data?.subjects).map((subject) => (
+        <SubjectComponent key={subject.Id} subject={subject}/>
       ))}
     </ScrollView>
   );
 }
 
-function SubjectComponent({subjectWithGrades}: { subjectWithGrades: SubjectWithGrades }) {
+function SubjectComponent({subject}: { subject: NewSubject }) {
   return (
     <View style={{borderWidth: 1, borderColor: "gray"}}>
-      <Text style={{color: "white"}}>{subjectWithGrades.subject.Name}</Text>
-      {subjectWithGrades?.grades.map((gradeWithComment) => (
-        <GradeComponent key={gradeWithComment.grade.Id} gradeWithComment={gradeWithComment}/>
+      <Text style={{color: "white"}}>{subject.Name}</Text>
+      {subject?.grades.map((grade) => (
+        <GradeComponent key={grade.Id} grade={grade}/>
       ))}
     </View>
   )
 }
 
-function GradeComponent({gradeWithComment}: { gradeWithComment: GradeWithComment }) {
+function GradeComponent({grade}: { grade: NewGrade }) {
   return (
     <>
-      <Text style={{color: "white"}}>{gradeWithComment.grade.Grade}</Text>
-      <Text style={{color: "white"}}>{gradeWithComment.comment?.Text ?? ""}</Text>
+      <Text style={{color: "white"}}>{grade.Grade}</Text>
+      <Text style={{color: "white"}}>{grade.Comment?.Text ?? ""}</Text>
     </>
   )
 }
