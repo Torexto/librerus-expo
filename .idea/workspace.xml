@@ -1,10 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AngularSettings">
+    <option name="useTypesFromServer" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b414ac3-87e5-4507-bf67-2970d6396dbc" name="Changes" comment="" />
+    <list default="true" id="8b414ac3-87e5-4507-bf67-2970d6396dbc" name="Changes" comment="">
+      <change afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(drawer)/_layout.tsx" afterDir="false" />
+      <change afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(drawer)/grades.tsx" afterDir="false" />
+      <change afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(drawer)/index.tsx" afterDir="false" />
+      <change afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/DrawerContent.tsx" afterDir="false" />
+      <change afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/eas.json" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.gitignore" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.gitignore" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/workspace.xml" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app.json" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app.json" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/_layout.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/(tabs)/index.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/+not-found.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/+not-found.tsx" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/_layout.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/_layout.tsx" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/login.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/app/login.tsx" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/fonts/SpaceMono-Regular.ttf" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/adaptive-icon.png" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/adaptive-icon.png" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/icon.png" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/icon.png" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/partial-react-logo.png" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/partial-react-logo.png" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/react-logo@2x.png" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/react-logo@2x.png" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/react-logo@3x.png" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/react-logo@3x.png" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/splash-icon.png" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/assets/images/splash-icon.png" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/Collapsible.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/ExternalLink.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/HapticTab.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/HelloWave.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/ParallaxScrollView.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/ThemedText.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/ThemedView.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/ui/IconSymbol.ios.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/ui/IconSymbol.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/ui/TabBarBackground.ios.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/components/ui/TabBarBackground.tsx" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/constants/Colors.ts" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useColorScheme.ts" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useColorScheme.web.ts" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useLibrus.tsx" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useLibrus.tsx" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/hooks/useThemeColor.ts" beforeDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/package-lock.json" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/package-lock.json" afterDir="false" />
+      <change beforePath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/package.json" beforeDir="false" afterPath="/run/media/torexto/DATA_SSD/WebstormProjects/librerus/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +59,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -53,6 +99,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.android.executor&quot;: &quot;Run&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.TypeScript&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/disks/DATA_SSD/WebstormProjects/librerus/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -67,10 +114,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.android">
-    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="android" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -81,10 +125,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="JavaScript Debug.Angular Application" />
-      <item itemvalue="npm.android" />
-    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -103,12 +143,19 @@
       <workItem from="1746449932699" duration="4539000" />
       <workItem from="1746528670568" duration="15210000" />
       <workItem from="1746608964375" duration="2788000" />
-      <workItem from="1746715577975" duration="783000" />
+      <workItem from="1746715577975" duration="837000" />
+      <workItem from="1746958951549" duration="5911000" />
+      <workItem from="1746969253277" duration="9837000" />
+      <workItem from="1746979753682" duration="206000" />
+      <workItem from="1746979970568" duration="5958000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VueSettings">
+    <option name="useTypesFromServer" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

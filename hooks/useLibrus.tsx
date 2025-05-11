@@ -1,6 +1,6 @@
-import {createContext, ReactNode, useContext, useState} from "react";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import LibrusApi, {Grade, GradeComment, Subject, withCredentials} from "@/api";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import {createContext, ReactNode, useContext, useState} from "react";
 
 export type Subjects = Record<string, NewSubject>;
 
@@ -18,7 +18,7 @@ export type LibrusContextType = {
 
 const LibrusContext = createContext<LibrusContextType | undefined>(undefined);
 
-export const LibrusProvider = ({children}: { children: ReactNode }) => {
+export const LibrusProvider = ({children}: { children?: ReactNode }) => {
   const [data, setData] = useState<LibrusData>();
 
   const refresh = async () => {
@@ -29,7 +29,10 @@ export const LibrusProvider = ({children}: { children: ReactNode }) => {
 
     withCredentials(login, pass)
       .then(fetchData)
-      .catch(console.error);
+      .catch((error) => {
+        console.error(error)
+        throw error;
+      });
   }
 
   const fetchData = async (api: LibrusApi) => {

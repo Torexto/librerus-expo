@@ -1,9 +1,9 @@
 import {useState} from 'react';
-import {Button, TextInput, View} from 'react-native';
+import {Button, Surface, Text, TextInput} from 'react-native-paper';
 import {withCredentials} from "@/api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import {ThemedText} from "@/components/ThemedText";
 import {useRouter} from "expo-router";
+import {KeyboardAvoidingView} from "react-native";
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -12,37 +12,45 @@ export default function LoginScreen() {
   const [pass, setPass] = useState('');
   const [error, setError] = useState('');
 
-  const handleLogin = async () => {
+  const loginHandler = async () => {
     withCredentials(login, pass)
       .then(async () => {
         await AsyncStorage.setItem("login", login);
         await AsyncStorage.setItem("pass", pass);
 
-        router.replace("/(tabs)");
+        router.replace("/(drawer)");
       })
       .catch(e => setError(e.message));
   }
 
   return (
-    <View style={{padding: 20, height: "100%", justifyContent: "center"}}>
-      <TextInput
-        placeholder="Login"
-        placeholderTextColor="white"
-        value={login}
-        onChangeText={setLogin}
-        style={{borderWidth: 1, padding: 10, borderColor: 'gray', color: 'white'}}
-        autoFocus
-      />
-      <TextInput
-        placeholder="Hasło"
-        placeholderTextColor="white"
-        value={pass}
-        onChangeText={setPass}
-        style={{borderWidth: 1, padding: 10, borderColor: 'gray', color: 'white'}}
-        secureTextEntry={true}
-      />
-      <Button title="Zaloguj" onPress={handleLogin}/>
-      <ThemedText>{error}</ThemedText>
-    </View>
+    <KeyboardAvoidingView style={{height: "100%"}}>
+      <Surface style={{flex: 1, justifyContent: "center", padding: 20, gap: 10}}>
+        <TextInput
+          label="Login"
+          value={login}
+          onChangeText={setLogin}
+          autoFocus
+          mode="outlined"
+          className="w-full"
+        />
+        <TextInput
+          label="Hasło"
+          value={pass}
+          onChangeText={setPass}
+          secureTextEntry
+          mode="outlined"
+          className="w-full"
+        />
+        <Button mode="contained" onPress={loginHandler} className="w-full">
+          Zaloguj
+        </Button>
+        {error ? (
+          <Text variant="titleLarge" className="text-red-700 mt-2">
+            {error}
+          </Text>
+        ) : null}
+      </Surface>
+    </KeyboardAvoidingView>
   );
 }
