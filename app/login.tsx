@@ -23,7 +23,8 @@ export default function LoginScreen() {
       .catch(e => setError(e.message));
   }
 
-  return (
+  // @ts-ignore
+    return (
     <KeyboardAvoidingView style={{height: "100%"}}>
       <Surface style={{flex: 1, justifyContent: "center", padding: 20, gap: 10}}>
         <TextInput
@@ -32,7 +33,6 @@ export default function LoginScreen() {
           onChangeText={setLogin}
           autoFocus
           mode="outlined"
-          className="w-full"
         />
         <TextInput
           label="Hasło"
@@ -40,13 +40,12 @@ export default function LoginScreen() {
           onChangeText={setPass}
           secureTextEntry
           mode="outlined"
-          className="w-full"
         />
-        <Button mode="contained" onPress={loginHandler} className="w-full">
+        <Button mode="contained" onPress={loginHandler}>
           Zaloguj
         </Button>
         {error ? (
-          <Text variant="titleLarge" className="text-red-700 mt-2">
+          <Text variant="titleLarge" style={{color: "red", marginTop: 5}}>
             {error}
           </Text>
         ) : null}
