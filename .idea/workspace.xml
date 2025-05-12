@@ -8,17 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b414ac3-87e5-4507-bf67-2970d6396dbc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/adaptive-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/adaptive-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon.png" afterDir="false" />
     </list>
-    <list id="9fed3dec-7eab-425e-afec-0d3c1c95f679" name="Changes by arek" comment="">
-      <change beforePath="$PROJECT_DIR$/app/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/login.tsx" afterDir="false" />
-    </list>
+    <list id="9fed3dec-7eab-425e-afec-0d3c1c95f679" name="Changes by arek" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,17 +39,6 @@
     "accountId": "4c1ff1a1-8439-462a-83b5-256f1aa6f2fb"
   }
 }]]></component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/app/login.tsx">
-      <ranges>
-        <range start1="25" end1="26" start2="25" end2="27" changelist="9fed3dec-7eab-425e-afec-0d3c1c95f679" />
-        <range start1="34" end1="35" start2="35" end2="35" changelist="8b414ac3-87e5-4507-bf67-2970d6396dbc" />
-        <range start1="42" end1="43" start2="42" end2="42" changelist="8b414ac3-87e5-4507-bf67-2970d6396dbc" />
-        <range start1="44" end1="45" start2="43" end2="44" changelist="8b414ac3-87e5-4507-bf67-2970d6396dbc" />
-        <range start1="48" end1="49" start2="47" end2="48" changelist="8b414ac3-87e5-4507-bf67-2970d6396dbc" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -80,7 +61,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.android.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "settings.editor.selected.configurable": "proofread",
     "ts.external.directory.path": "/home/torexto/Code/WebstormProjects/librerus-expo/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -94,18 +75,6 @@
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="android" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="android" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -129,7 +98,7 @@
       <workItem from="1746969253277" duration="9837000" />
       <workItem from="1746979753682" duration="206000" />
       <workItem from="1746979970568" duration="5958000" />
-      <workItem from="1747040588187" duration="1440000" />
+      <workItem from="1747040588187" duration="1861000" />
     </task>
     <servers />
   </component>
