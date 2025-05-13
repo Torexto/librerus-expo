@@ -6,12 +6,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import {router} from "expo-router";
 
 export default function GradesScreen() {
-  const {data, refresh} = useLibrus();
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    refresh().then(() => setLoading(false));
-  }, []);
+  const {data} = useLibrus();
 
   const logoutHandler = async () => {
     await AsyncStorage.removeItem("login");
@@ -20,7 +15,7 @@ export default function GradesScreen() {
     router.replace("/login");
   }
 
-  if (loading || !data) return <Text>Loading...</Text>;
+  if (!data || !data?.subjects) return <Text>Loading...</Text>;
 
   return (
     <Surface style={{flex: 1}}>

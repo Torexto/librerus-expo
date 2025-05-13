@@ -1,6 +1,6 @@
 import axios, {AxiosError, AxiosInstance} from "axios";
 
-type Grade = {
+export type Grade = {
   Id: number;
   Lesson: {
     Id: number;
@@ -59,6 +59,47 @@ export type GradeComment = {
   Text: string;
 };
 
+export type LuckyNumber = {
+  LuckyNumber: number;
+  LuckyNumberDay: string;
+};
+
+export type UserInfo = {
+  Account: {
+    Email: string;
+    ExpiredPremiumDate: number;
+    FirstName: string;
+    GroupId: number;
+    Id: number;
+    IsActive: boolean;
+    IsPremium: boolean;
+    IsPremiumDemo: boolean;
+    LastName: string;
+    Login: string;
+    PremiumAddons: string[];
+    UserId: number;
+  };
+  Class: {
+    Id: number;
+    Url: string;
+  };
+  Refresh: number;
+  User: {
+    FirstName: string;
+    LastName: string;
+  };
+};
+
+type Timetable = {
+  [date: string]: {
+
+  }
+}
+
+type TimetablePages = {
+  Next: string;
+  Prev: string;
+}
 
 class LibrusApi {
   private axios: AxiosInstance;
@@ -98,20 +139,22 @@ class LibrusApi {
   public async getLuckyNumber() {
     return this.axios
       .get("https://synergia.librus.pl/gateway/api/2.0/LuckyNumbers")
-      .then(res => res.data["LuckyNumber"])
+      .then(res => res.data["LuckyNumber"] as LuckyNumber)
       .catch(e => {
         if (e instanceof AxiosError)
           throw new Error(`Failed to get lucky number: ${e?.response?.data}`);
+        throw new Error("Failed to get lucky number");
       });
   }
 
   public async getUserInfo() {
     return this.axios
       .get("https://synergia.librus.pl/gateway/api/2.0/Me")
-      .then(res => res.data["Me"])
+      .then(res => res.data["Me"] as UserInfo)
       .catch(e => {
         if (e instanceof AxiosError)
           throw new Error(`Failed to get user info: ${e?.response?.data}`);
+        throw new Error("Failed to get user info");
       });
   }
 
@@ -177,8 +220,18 @@ class LibrusApi {
         return null;
       });
   }
+
+  public async getTimetables(weekStart: string) {
+    return this.axios
+      .get(`https://synergia.librus.pl/gateway/api/2.0/Timetables?weekStart=${weekStart}`)
+      .then(res => res.data["Timetables"])
+      .catch(e => {
+        if (e instanceof AxiosError)
+          throw new Error(`Failed to get timetables: ${e?.response?.data}`);
+        return [];
+      });
+  }
 }
 
 export default LibrusApi;
 export const {withCredentials} = LibrusApi;
-export type {Grade};

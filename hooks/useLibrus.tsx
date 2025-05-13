@@ -1,4 +1,4 @@
-import LibrusApi, {Grade, GradeComment, Subject, withCredentials} from "@/api";
+import LibrusApi, {Grade, GradeComment, LuckyNumber, Subject, UserInfo, withCredentials} from "@/api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {createContext, ReactNode, useContext, useState} from "react";
 
@@ -8,18 +8,20 @@ export type NewSubject = Subject & { grades: NewGrade[] };
 export type NewGrade = Grade & { Comment: GradeComment | null };
 
 export type LibrusData = {
-  subjects: Subjects;
+  subjects?: Subjects;
+  luckyNumber?: LuckyNumber;
+  userInfo?: UserInfo;
 }
 
 export type LibrusContextType = {
-  data: LibrusData | undefined;
+  data: LibrusData;
   refresh: () => Promise<void>;
 }
 
 const LibrusContext = createContext<LibrusContextType | undefined>(undefined);
 
 export const LibrusProvider = ({children}: { children?: ReactNode }) => {
-  const [data, setData] = useState<LibrusData>();
+  const [data, setData] = useState<LibrusData>({});
 
   const refresh = async () => {
     const login = await AsyncStorage.getItem("login");
@@ -39,10 +41,23 @@ export const LibrusProvider = ({children}: { children?: ReactNode }) => {
     const promisesHandler = [];
 
     promisesHandler.push(fetchGrades(api));
+    promisesHandler.push(fetchLuckyNumber(api));
+    promisesHandler.push(fetchUserInfo(api));
 
     await Promise.all(promisesHandler);
   }
 
+  const fetchUserInfo = async (api: LibrusApi) => {
+    const userInfo = await api.getUserInfo();
+    console.log(userInfo);
+    setData((prev) => ({...prev, userInfo}));
+  }
+
+  const fetchLuckyNumber = async (api: LibrusApi) => {
+    const luckyNumber = await api.getLuckyNumber();
+    console.log(luckyNumber);
+    setData((prev) => ({...prev, luckyNumber}));
+  }
   const fetchGrades = async (api: LibrusApi) => {
     api
       .getGrades()
